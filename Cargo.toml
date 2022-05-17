@@ -1,0 +1,22 @@
+[package]
+name = "event-watcher-contract-examples"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "event-watcher-http"
+path = "src/event_watcher_http.rs"
+
+[[bin]]
+name = "specific-block-event-watcher"
+path = "src/specific_block_event_watcher.rs"
+
+[[bin]]
+name = "event-watcher-ws"
+path = "src/event_watcher_ws.rs"
+
+
+[dependencies]
+tokio = { version = "1.18.2", features = ["full"] }
+web3 = "0.18.0"
+hex = "0.4"
