@@ -15,7 +15,7 @@ cargo run --bin event-watcher-ws
 
 ### Information for examples
 
- # | hash |
+ Info | Hash |
 --- | --- |
 Contract Pancake LPs (CAKE-BNB) | [0x0eD7e52944161450477ee417DE9Cd3a859b14fD0](https://bscscan.com/address/0x0eD7e52944161450477ee417DE9Cd3a859b14fD0) |
 Event `Swap` signature(keccak-256) | 0xd78ad95fa46c994b6551d0da85fc275fe613ce37657fb8d5e3d130840159d822 |
