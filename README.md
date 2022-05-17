@@ -15,6 +15,9 @@ cargo run --bin event-watcher-ws
 
 ### Information for examples
 
+> JSON-RPC Endpoint
+https://docs.binance.org/smart-chain/developer/rpc.html
+
  Info | Hash |
 --- | --- |
 Contract Pancake LPs (CAKE-BNB) | [0x0eD7e52944161450477ee417DE9Cd3a859b14fD0](https://bscscan.com/address/0x0eD7e52944161450477ee417DE9Cd3a859b14fD0) |
