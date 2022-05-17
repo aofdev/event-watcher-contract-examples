@@ -7,7 +7,6 @@ use web3::{
 
 #[tokio::main]
 async fn main() -> web3::contract::Result<()> {
-    // https://docs.binance.org/smart-chain/developer/rpc.html
     let web3 = web3::Web3::new(web3::transports::Http::new(
         "https://bsc-dataseed.binance.org/",
     )?);

@@ -7,7 +7,6 @@ use std::str::FromStr;
 
 #[tokio::main]
 async fn main() -> web3::contract::Result<()> {
-    // https://docs.binance.org/smart-chain/developer/rpc.html
     let web3 = web3::Web3::new(
         web3::transports::WebSocket::new("wss://bsc-ws-node.nariox.org:443").await?,
     );

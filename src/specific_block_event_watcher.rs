@@ -2,7 +2,6 @@ use std::str::FromStr;
 use web3::types::{BlockNumber, FilterBuilder, H160, H256, U64};
 #[tokio::main]
 async fn main() -> web3::contract::Result<()> {
-    // https://docs.binance.org/smart-chain/developer/rpc.html
     let web3 = web3::Web3::new(web3::transports::Http::new(
         "https://bsc-dataseed.binance.org/",
     )?);
