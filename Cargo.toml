@@ -15,8 +15,15 @@ path = "src/specific_block_event_watcher.rs"
 name = "event-watcher-ws"
 path = "src/event_watcher_ws.rs"
 
+[[bin]]
+name = "event-watcher-http-discord"
+path = "src/event_watcher_http_discord.rs"
+
 
 [dependencies]
 tokio = { version = "1.18.2", features = ["full"] }
 web3 = "0.18.0"
 hex = "0.4"
+reqwest = "0.11.10"
+strum_macros = "0.24"
+strum = { version = "0.24", features = ["derive"] }
