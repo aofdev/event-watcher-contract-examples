@@ -12,7 +12,7 @@ cargo run --bin specific-block-event-watcher
 # Run event watcher websocket
 cargo run --bin event-watcher-ws
 
-# Run event watcher http and send to Discord
+# Run event watcher http and send to discord
 cargo run --bin event-watcher-http-discord
 ```
 
