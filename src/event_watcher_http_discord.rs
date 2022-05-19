@@ -60,7 +60,10 @@ async fn main() -> web3::contract::Result<()> {
         let log: Log = result_log.unwrap();
         println!("----------------------------------------");
         println!("Block Number: {}", log.block_number.unwrap());
-        let transaction_hash = format!("{:?}", H256::from_slice(&log.transaction_hash.unwrap().0));
+        let link_transaction = format!(
+            "https://bscscan.com/tx/{:?}",
+            H256::from_slice(&log.transaction_hash.unwrap().0)
+        );
         let event_signature = format!("{:?}", H256::from_slice(&log.topics[0].0));
         let from_address = format!("{:?}", H256::from_slice(&log.topics[1].0));
         let to_address = format!(
@@ -73,9 +76,9 @@ async fn main() -> web3::contract::Result<()> {
         msg.insert(
             "content",
             format!(
-                "Block Number: {} \nTransaction Hash: {} \nEvent: {:?} \nFrom Address: {} \nTo Address: {} \n",
+                "Block Number: {} \nTransaction: {} \nEvent: {:?} \nFrom Address: {} \nTo Address: {} \n",
                 log.block_number.unwrap(),
-                transaction_hash,
+                link_transaction,
                 EventType::from_str(event_signature.as_str()).unwrap_or(EventType::None),
                 from_address,
                 to_address
